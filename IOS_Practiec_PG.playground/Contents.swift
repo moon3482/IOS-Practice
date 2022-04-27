@@ -146,3 +146,21 @@ func dictionaryDelete(){
     print(hellsing)
 }
 dictionaryDelete()
+
+//딕셔너리 K,V 나열
+func dictionaryArrange(){
+    var hellsing = [
+        "아카드":"SSS등급",
+        "인테그랄 페어브룩 윈게이츠 헬싱":"B등급",
+        "세라스 빅토리아":"S등급",
+        "월터 쿰 도르네즈":"A등급",
+        "아서 헬싱":"C등급"
+    ]
+    //key 나열
+    print(hellsing.keys)
+    print(hellsing.keys.sorted())
+    //value 나열
+    print(hellsing.values)
+    print(hellsing.values.sorted())
+}
+dictionaryArrange()
