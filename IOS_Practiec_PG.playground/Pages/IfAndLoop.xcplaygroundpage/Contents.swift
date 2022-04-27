@@ -40,3 +40,34 @@ func launch(){
     print(menu)
 }
 launch()
+
+//for 반복문을 이용한 배열 요소 출력
+func loopAnimationArray(){
+    let list = ["헬싱","하이큐","사카모토입니다만","도쿄리벤저스","강철의 연금술사","그 남자 그 여자","다!다!다!"]
+    
+    for ani in list {
+        print("내가 본 애니메이션은 \(ani)")
+    }
+}
+loopAnimationArray()
+
+//for 반복문을 이용한 딕셔너리 요소 출력
+func loopAnimationDictionary(){
+    let ani :[String :String] = [
+        "헬싱":"봤",
+        "강철의 연금술사":"봤",
+        "스파이 패밀리":"안봤",
+        "죠죠의 기묘한모험":"안봤",
+        "하이큐":"봤",
+        "날씨의 아이":"안봤",
+        "피아노의 숲":"안봤",
+        "은혼":"안봤",
+        "순백의 소리":"안봤",
+        "짱구는 못 말려":"봤"
+    ]
+    for (title,watchState) in ani{
+        print("나는 \"\(title)\"을/(를) \(watchState)어.")
+    }
+}
+loopAnimationDictionary()
+
