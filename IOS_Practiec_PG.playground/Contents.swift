@@ -179,3 +179,25 @@ func dictionaryCompare(){
     print(haikyu==haikyu4)
 }
 dictionaryCompare()
+
+//딕셔너리 키 값 클로저 사용해서 검색
+func dictionarySearch(){
+    var haikyu = [
+        "oikawa touru":"aozhobasai",
+        "nishinoya yu":"karasno",
+        "kozume kenma":"nekoma"
+    ]
+    //딕셔너리 K,V 출력
+    for(name, school) in haikyu{
+        print(name,school)
+    }
+    
+    let value : ((String, String)) -> Bool = {
+        $0.0.contains("ko")
+    }
+    haikyu.contains(where: value)
+    haikyu.first(where: value)
+    haikyu.filter(value)
+    
+}
+dictionarySearch()
