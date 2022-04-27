@@ -98,3 +98,27 @@ func dictionaryTypeImport(){
     print(fullMetal["에드워드 엘릭",default: "is Empty"])//강철의 연금술사
 }
 dictionaryTypeImport()
+
+//딕셔너리 요소 추가 및 업데이트
+func dictionaryInsertAndUpdate(){
+    var hellsing = [
+        "아카드":"SSS등급",
+        "인테그랄 페어브룩 윈게이츠 헬싱":"B등급",
+        "세라스 빅토리아":"S등급",
+        "월터 쿰 도르네즈":"A등급",
+        "아서 헬싱":"C등급"
+    ]
+    //Subscript 로 요소추가 하기
+    //키 값이 존재하지 않으면 insert
+    hellsing["알렉산더 안데르센"] = "SS등급"
+    //키 값이 존재하면 update
+    hellsing["아카드"] = "SS 등급"
+    
+    //updateValue로 요소 추가하기
+    //키 값이 존재하지 않으면 insert
+    hellsing.updateValue("B등급", forKey: "엔리코 맥스웰")
+    //키 값이 존재하면 update
+    hellsing.updateValue("SSSS등급", forKey: "아카드")
+    print(hellsing)
+}
+dictionaryInsertAndUpdate()
