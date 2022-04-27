@@ -122,3 +122,27 @@ func dictionaryInsertAndUpdate(){
     print(hellsing)
 }
 dictionaryInsertAndUpdate()
+
+//딕셔너리 요소 삭제
+func dictionaryDelete(){
+    var hellsing = [
+        "아카드":"SSS등급",
+        "인테그랄 페어브룩 윈게이츠 헬싱":"B등급",
+        "세라스 빅토리아":"S등급",
+        "월터 쿰 도르네즈":"A등급",
+        "아서 헬싱":"C등급"
+    ]
+    //Subscript 로 요소삭제 하기
+    //키 값이 존재하지 않아도 오류 안남
+    hellsing["알렉산더 안데르센"] = nil
+    //키 값이 존재하면 해당 키 밸류 삭제
+    hellsing["아카드"] = nil
+    print(hellsing)
+    //updateValue로 요소 삭제하기
+    //키 값이 존재하지 않으면 nil 반환
+    hellsing.removeValue(forKey: "엔리코 맥스웰")
+    //키 값이 존재하면 해당 키의 밸류 반환
+    hellsing.removeValue(forKey: "아서 헬싱")
+    print(hellsing)
+}
+dictionaryDelete()
