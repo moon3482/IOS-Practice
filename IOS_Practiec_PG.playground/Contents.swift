@@ -164,3 +164,18 @@ func dictionaryArrange(){
     print(hellsing.values.sorted())
 }
 dictionaryArrange()
+
+//딕셔너리 비교
+func dictionaryCompare(){
+    let haikyu = ["hinata shoyo":"karasno","kageyama tobio":"karasno"]
+    let haikyu2 = ["hinata shoyo":"karasno","kageyama tobio":"karasno"]
+    let haikyu3 = ["hinata Shoyo":"karasno","kageyama tobio":"karasno"]
+    let haikyu4 = ["tsukishima kei":"karasno","kageyama tobio":"karasno"]
+    //키와 밸류 모두 일치하기 때문에 true
+    print(haikyu==haikyu2)
+    //키와 밸류 중 대문자 소문자가 다르기 때문에 false
+    print(haikyu==haikyu3)
+    //키와 밸류 내용이 다르기 때문에 false
+    print(haikyu==haikyu4)
+}
+dictionaryCompare()
