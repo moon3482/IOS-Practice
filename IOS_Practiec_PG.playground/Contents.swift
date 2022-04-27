@@ -57,4 +57,44 @@ func tripleQuoting(){
 
 tripleQuoting()
 
+//배열
+func array(){
+    let haikyu = ["히나타 쇼요","카게야마 토비오","오이카와 토오루","엔노시타 치카라","니시노야 유"]
+    print(haikyu)
+    print(haikyu[4])//니시노야 유
+}
+array()
 
+//배열 타입지정
+func arrayTypeImport(){
+    let haikyu:[String] = ["히나타 쇼요","카게야마 토비오","오이카와 토오루","엔노시타 치카라","니시노야 유"]
+    print(haikyu)
+    print(haikyu[2])//오이카와 토오루
+}
+arrayTypeImport()
+
+//딕셔너리
+func dictionary(){
+    let fullMetal = [
+        "에드워드 엘릭":"강철의 연금술사",
+        "로이 머스탱": "불꽃의 연금술사",
+        "알렉스 루이 암스트롱":"호완의 연금술사",
+        "조리오 코만치": "은의 연금술사"
+    ]
+    print(fullMetal)
+    print(fullMetal["에드워드",default: "is Empty"])//강철의 연금술사
+}
+dictionary()
+
+//딕셔너리 타입지정
+func dictionaryTypeImport(){
+    let fullMetal:[String:String] = [
+        "에드워드 엘릭":"강철의 연금술사",
+        "로이 머스탱": "불꽃의 연금술사",
+        "알렉스 루이 암스트롱":"호완의 연금술사",
+        "조리오 코만치": "은의 연금술사"
+    ]
+    print(fullMetal)
+    print(fullMetal["에드워드 엘릭",default: "is Empty"])//강철의 연금술사
+}
+dictionaryTypeImport()
