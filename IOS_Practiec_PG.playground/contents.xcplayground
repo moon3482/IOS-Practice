@@ -3,5 +3,6 @@
     <pages>
         <page name='DictionaryAndVariable'/>
         <page name='IfAndLoop'/>
+        <page name='Optional'/>
     </pages>
 </playground>
