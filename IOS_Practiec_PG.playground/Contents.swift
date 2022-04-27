@@ -17,6 +17,16 @@ func variableAndLet(){
 }
 variableAndLet()
 
+//정적 타이핑, 자료형 명시하기
+func typeImport(){
+    var name : String = "Charlie"
+    let birth : Int = 1993
+    var weight : Float = 72.5
+    print("name is \(name) , birthYear is \(birth) , weight is \(weight)kg.")
+}
+
+typeImport()
+
 //콘솔로그 남기기
 func consoleLog(){
     let name : String = "Charlie"
