@@ -4,5 +4,7 @@
         <page name='DictionaryAndVariable'/>
         <page name='IfAndLoop'/>
         <page name='Optional'/>
+        <page name='Struct'/>
+        <page name='Class'/>
     </pages>
 </playground>
