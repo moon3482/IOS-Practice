@@ -6,5 +6,6 @@
         <page name='Optional'/>
         <page name='Struct'/>
         <page name='Class'/>
+        <page name='Enumrations'/>
     </pages>
 </playground>
