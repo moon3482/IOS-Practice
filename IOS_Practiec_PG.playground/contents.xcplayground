@@ -7,5 +7,6 @@
         <page name='Struct'/>
         <page name='Class'/>
         <page name='Enumrations'/>
+        <page name='Closure'/>
     </pages>
 </playground>
